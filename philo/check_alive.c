@@ -6,11 +6,13 @@
 /*   By: nfauvez <nfauvez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 07:49:36 by nfauvez           #+#    #+#             */
-/*   Updated: 2023/09/13 10:33:47 by nfauvez          ###   ########.fr       */
+/*   Updated: 2023/09/13 11:48:41 by nfauvez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
+
+// Check that the philos are not dead
 
 void	kill_em_all(t_data *data)
 {

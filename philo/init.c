@@ -6,11 +6,13 @@
 /*   By: nfauvez <nfauvez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/04 12:21:39 by nfauvez           #+#    #+#             */
-/*   Updated: 2023/09/13 10:31:52 by nfauvez          ###   ########.fr       */
+/*   Updated: 2023/09/13 11:31:21 by nfauvez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
+
+// Fill in the philo data
 
 void	fillo(t_philo *philo, t_data *data, unsigned int nb)
 {
@@ -41,6 +43,8 @@ void	fillo(t_philo *philo, t_data *data, unsigned int nb)
 	}
 }
 
+// Create the philos and check that there are no errors
+
 int	init_philo(unsigned int nb, t_data *data)
 {
 	t_philo	philo;
@@ -59,6 +63,8 @@ int	init_philo(unsigned int nb, t_data *data)
 	pthread_mutex_unlock(data->l_data);
 	return (0);
 }
+
+// Create forks, there is a fork for each philos
 
 void	set_fork(t_data *data)
 {

@@ -6,11 +6,13 @@
 /*   By: nfauvez <nfauvez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/04 11:56:47 by nfauvez           #+#    #+#             */
-/*   Updated: 2023/09/13 10:36:48 by nfauvez          ###   ########.fr       */
+/*   Updated: 2023/09/13 10:58:27 by nfauvez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
+
+// Convert the arguments
 
 int	set_arg(t_data *data, char **av, int ac)
 {
@@ -34,6 +36,8 @@ int	set_arg(t_data *data, char **av, int ac)
 		return (5);
 	return (set_calloc(data));
 }
+
+// Check if the arguments are digits
 
 int	check_digit(char *str)
 {
@@ -62,6 +66,9 @@ int	check_args(char **av)
 	}
 	return (1);
 }
+
+// Check the arguments, if there is an error we run the error functions.
+// Calling init functions
 
 int	main(int ac, char **av)
 {

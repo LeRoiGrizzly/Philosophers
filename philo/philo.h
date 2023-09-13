@@ -6,7 +6,7 @@
 /*   By: nfauvez <nfauvez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/04 11:55:49 by nfauvez           #+#    #+#             */
-/*   Updated: 2023/09/13 10:26:34 by nfauvez          ###   ########.fr       */
+/*   Updated: 2023/09/13 11:52:12 by nfauvez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,25 +21,6 @@
 # include <sys/time.h>
 # include <stdio.h>
 # include <unistd.h>
-
-/* ---------- MACROS ---------- */
-
-# define NO_COLOR 0
-# define BLUE "\e[38;5;39m"
-# define GREEN "\e[38;5;28m"
-# define RED "\e[38;5;196m"
-# define YELLOW "\e[38;5;82m"
-# define GREY "\e[38;5;245m"
-# define RESET "\e[0m"
-
-typedef enum e_state
-{
-	TAKE_FORK,
-	EAT,
-	SLEEP,
-	THINK,
-	DEAD
-}		t_state;
 
 /*------------- STRUCTURES ---------------*/
 

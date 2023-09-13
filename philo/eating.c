@@ -6,11 +6,13 @@
 /*   By: nfauvez <nfauvez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 07:50:11 by nfauvez           #+#    #+#             */
-/*   Updated: 2023/09/13 10:32:57 by nfauvez          ###   ########.fr       */
+/*   Updated: 2023/09/13 11:35:37 by nfauvez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
+
+// Allows to take a fork
 
 void	take_fork_1(t_philo *philo, char v)
 {
@@ -67,6 +69,8 @@ void	eat_last(t_philo *philo, char *life)
 	philo->nb_eat++;
 	pthread_mutex_unlock(&(philo->nb_eat_m));
 }
+
+// Launch the "eating" action and print the message
 
 void	eat(t_philo *philo, char *life)
 {

@@ -6,7 +6,7 @@
 /*   By: nfauvez <nfauvez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 07:50:39 by nfauvez           #+#    #+#             */
-/*   Updated: 2023/09/13 10:30:37 by nfauvez          ###   ########.fr       */
+/*   Updated: 2023/09/13 11:36:54 by nfauvez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ int	free_all(t_data *data)
 	free(data->philo);
 	return (0);
 }
+
+// Display errors message
 
 int	ft_return(int mark, t_data *data)
 {

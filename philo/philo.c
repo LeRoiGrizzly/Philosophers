@@ -6,11 +6,13 @@
 /*   By: nfauvez <nfauvez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 07:46:17 by nfauvez           #+#    #+#             */
-/*   Updated: 2023/09/13 10:36:55 by nfauvez          ###   ########.fr       */
+/*   Updated: 2023/09/13 11:42:42 by nfauvez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
+
+// Allows to have real time
 
 void	get_time(unsigned int *time, unsigned int *b_time)
 {
@@ -23,6 +25,8 @@ void	get_time(unsigned int *time, unsigned int *b_time)
 	else
 		*time = (tv.tv_sec * 1000000 + tv.tv_usec) - *b_time;
 }
+
+// If there is only one philo
 
 int	philoloner(t_data *data)
 {
@@ -41,6 +45,9 @@ int	philoloner(t_data *data)
 	printf("%u 1 died\n", time / 1000);
 	return (0);
 }
+
+// Creation and routine function of philos.
+// If the philos are correctly created, start their routine.
 
 int	philosophers(t_data *data)
 {

@@ -6,11 +6,13 @@
 /*   By: nfauvez <nfauvez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 07:42:47 by nfauvez           #+#    #+#             */
-/*   Updated: 2023/09/13 10:35:00 by nfauvez          ###   ########.fr       */
+/*   Updated: 2023/09/13 11:47:14 by nfauvez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
+
+// Display log's messages
 
 void	ft_print(t_philo *philo, char *str)
 {
@@ -28,6 +30,8 @@ void	ft_print(t_philo *philo, char *str)
 	printf("%u %u %s\n", time / 1000, philo->nb, str);
 	pthread_mutex_unlock(philo->printf);
 }
+
+// Check if the philos are still alive
 
 void	still_breathing(t_philo *philo, char *life)
 {
@@ -52,6 +56,8 @@ void	still_breathing(t_philo *philo, char *life)
 	}
 }
 
+// Launch the "sleeping" action and print the message
+
 void	f_sleep(t_philo *philo, char *life)
 {
 	unsigned int	sleep;
@@ -68,6 +74,8 @@ void	f_sleep(t_philo *philo, char *life)
 		get_time(&time, &philo->b_time);
 	}
 }
+
+// Launch the "thinking" action and print the message
 
 void	think(t_philo *philo, char *life)
 {
